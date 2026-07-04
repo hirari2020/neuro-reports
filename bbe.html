@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>今月のBBE最新動向レポート｜患者会 会報誌</title>
+</head>
+<body style="margin:0">
+<style>
+  :root {
+    --paper:#F2F1EB; --surface:#FCFBF7; --ink:#1D2A2A; --ink-soft:#55635F;
+    --accent:#6B4E8A; --accent-deep:#3F2C55; --accent-tint:#E9E3F0;
+    --gold:#A9762E; --line:#DEDBD0;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP","Meiryo",system-ui,sans-serif;
+    --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","MS PMincho",serif;
+  }
+  * { box-sizing:border-box; }
+  .page { background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.85;
+    -webkit-font-smoothing:antialiased; padding:clamp(20px,5vw,56px) clamp(16px,4vw,32px) 64px; min-height:100%; }
+  .wrap { max-width:940px; margin:0 auto; }
+  .masthead { border-bottom:2px solid var(--accent-deep); padding-bottom:22px; margin-bottom:30px; }
+  .eyebrow { font-size:12.5px; letter-spacing:.16em; color:var(--accent); font-weight:700; margin:0 0 12px; }
+  .masthead h1 { font-family:var(--serif); font-weight:700; font-size:clamp(28px,5.4vw,44px); line-height:1.25; letter-spacing:.01em; margin:0 0 10px; text-wrap:balance; }
+  .masthead .sub { font-size:15px; color:var(--ink-soft); margin:0; }
+  .masthead .sub b { color:var(--ink); font-weight:700; }
+  .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:40px; }
+  .kpi { background:var(--surface); border:1px solid var(--line); border-radius:4px; border-top:3px solid var(--accent); padding:16px 16px 14px; }
+  .kpi .k-label { font-size:11.5px; letter-spacing:.08em; color:var(--ink-soft); margin:0 0 8px; }
+  .kpi .k-value { font-family:var(--serif); font-size:clamp(22px,3.6vw,30px); font-weight:700; line-height:1; font-variant-numeric:tabular-nums; }
+  .kpi .k-value small { font-size:14px; font-weight:700; margin-left:3px; color:var(--ink-soft); }
+  .section { margin-bottom:44px; }
+  .sec-head { display:flex; align-items:baseline; gap:14px; margin-bottom:18px; }
+  .sec-num { font-family:var(--serif); font-size:15px; color:var(--accent); font-weight:700; border:1px solid var(--accent); border-radius:50%; width:30px; height:30px; display:grid; place-items:center; flex:0 0 auto; }
+  .sec-head h2 { font-family:var(--serif); font-size:clamp(19px,3.2vw,24px); font-weight:700; margin:0; line-height:1.3; }
+  .lead { background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:4px; padding:24px clamp(20px,3.5vw,30px); font-size:16.5px; line-height:1.95; }
+  .lead p { margin:0; }
+  .features { display:grid; gap:18px; }
+  .feature { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:22px clamp(20px,3.5vw,28px) 24px; }
+  .f-top { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; }
+  .chip { font-size:11.5px; font-weight:700; letter-spacing:.04em; padding:3px 10px; border-radius:999px; color:#fff; }
+  .chip.research { background:var(--accent); }
+  .chip.kind { background:transparent; color:var(--accent-deep); border:1px solid var(--accent); }
+  .stars { margin-left:auto; font-size:13px; letter-spacing:.1em; color:var(--gold); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .stars span { color:var(--line); }
+  .feature h3 { font-family:var(--serif); font-size:clamp(17.5px,2.9vw,21px); font-weight:700; line-height:1.45; margin:0 0 12px; text-wrap:balance; }
+  .feature .body { margin:0 0 16px; font-size:15.5px; }
+  .impact { background:var(--accent-tint); border-radius:5px; padding:14px 16px; font-size:14.5px; line-height:1.8; }
+  .impact .lab { display:block; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--accent-deep); margin-bottom:5px; }
+  .src { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:13px; font-weight:700; color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+  .src:hover { border-bottom-color:var(--accent); }
+  .src::after { content:"\2197"; font-size:12px; }
+  .shifts { display:grid; gap:14px; }
+  .shift { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:18px clamp(18px,3vw,24px); display:grid; grid-template-columns:150px 1fr; gap:6px 22px; align-items:start; }
+  .shift .topic { font-family:var(--serif); font-weight:700; font-size:16px; color:var(--accent-deep); }
+  .shift .fromto { margin:0; font-size:15px; }
+  .shift .fromto .from { color:var(--ink-soft); }
+  .shift .fromto .arrow { color:var(--gold); font-weight:700; margin:0 8px; }
+  .crosslinks { margin-top:48px; background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:20px clamp(20px,3.5vw,26px); }
+  .crosslinks .cl-title { font-family:var(--serif); font-weight:700; font-size:16px; margin:0 0 12px; color:var(--accent-deep); }
+  .crosslinks ul { list-style:none; margin:0; padding:0; display:grid; gap:9px; }
+  .crosslinks li a { color:var(--accent); text-decoration:none; font-size:14.5px; font-weight:700; border-bottom:1px solid transparent; }
+  .crosslinks li a:hover { border-bottom-color:var(--accent); }
+  .crosslinks li a .en { color:var(--ink-soft); font-weight:400; font-size:13px; margin-left:6px; }
+  .crosslinks li.current { color:var(--ink-soft); font-size:14.5px; }
+  .foot { margin-top:40px; border-top:1px solid var(--line); padding-top:22px; font-size:13px; color:var(--ink-soft); line-height:1.8; }
+  .foot .note { background:#FBF6EC; border:1px solid #EAD9B8; border-radius:5px; padding:14px 16px; margin:0 0 16px; color:#6B5426; }
+  .foot .meta { display:flex; flex-wrap:wrap; gap:6px 20px; margin:0; }
+  .foot .meta span { white-space:nowrap; }
+  a:focus-visible, .src:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  @media (max-width:720px) { .kpis { grid-template-columns:repeat(2,1fr); } .shift { grid-template-columns:1fr; gap:4px; } }
+  .fade { opacity:0; transform:translateY(8px); animation:rise .6s ease forwards; }
+  .fade:nth-child(2) { animation-delay:.06s; } .fade:nth-child(3) { animation-delay:.12s; }
+  @keyframes rise { to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce) { .fade { animation:none; opacity:1; transform:none; } }
+</style>
+
+<div class="page">
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">患者会 会報誌用 ｜ 月次レポート</p>
+      <h1>今月のBBE最新動向レポート</h1>
+      <p class="sub">ビッカースタッフ脳幹脳炎　<b>2026年7月号</b></p>
+    </header>
+
+    <section class="kpis" aria-label="今月の概況">
+      <div class="kpi"><p class="k-label">分析対象論文</p><div class="k-value">23<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">重要度4以上</p><div class="k-value">23<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">対象期間</p><div class="k-value" style="font-size:19px">直近1ヶ月</div></div>
+      <div class="kpi"><p class="k-label">最新の論文</p><div class="k-value">5<small>/21</small></div></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">1</span><h2>今月のトレンド要約</h2></div>
+      <div class="lead"><p>今月登録されたBBE関連の論文からは、「診断」と「病気の捉え方」で大きな前進が見られました。最大のテーマは、脳MRIや髄液検査が正常でもBBEと診断し、早期に免疫療法を始めてよい、という考え方の定着です。複数の症例報告や神経生理検査（体性感覚誘発電位・聴性脳幹反応）の研究がこれを裏づけました。また、BBEをミラーフィッシャー症候群やギラン・バレー症候群と地続きの「抗GQ1b抗体症候群」という一つのスペクトラムとして理解する枠組みが広がり、抗体が陰性でも臨床症状で診断する重要性が強調されています。治療は免疫グロブリン（IVIG）を軸に、早期開始で良好な回復が期待できることが再確認されました。</p></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">2</span><h2>特に注目すべきニュース3選</h2></div>
+      <div class="features">
+        <article class="feature fade">
+          <div class="f-top"><span class="chip research">研究</span><span class="chip kind">診断</span><span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span></div>
+          <h3>検査が正常でも早期にIVIGを ― 画像・髄液が正常なBBEの診断</h3>
+          <p class="body">脳画像も髄液検査も正常だったにもかかわらず、臨床症状からBBEと判断し、免疫グロブリン療法（IVIG）で回復した患者の報告です。検査結果を待たずに早期治療を始める重要性を示しています。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>「検査で異常が出ない＝BBEではない」ではありません。この知見は診断の遅れを防ぎ、早く治療を始められることを意味し、回復のチャンスを広げます。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42326191/" target="_blank" rel="noopener noreferrer">PubMed 42326191</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top"><span class="chip research">研究</span><span class="chip kind">病態</span><span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span></div>
+          <h3>BBEは単独の病気ではない ― 抗GQ1b抗体症候群という統一モデル</h3>
+          <p class="body">BBE・ミラーフィッシャー症候群・ギラン・バレー症候群を、共通の抗GQ1b抗体を背景とする一連の病気（スペクトラム）として捉える新しい枠組みの総説。約3分の1のBBE患者は抗体が検出されないため、臨床症状での診断が重要と指摘しています。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>症状が複数の病名の間で揺れても、関連した一つの病態として一貫した治療（IVIG・血漿交換）が選べることを意味します。抗体検査が陰性でも見放されない、という安心につながります。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42093930/" target="_blank" rel="noopener noreferrer">PubMed 42093930</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top"><span class="chip research">研究</span><span class="chip kind">治療</span><span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span></div>
+          <h3>IVIG＋ステロイドの併用が有効 ― BBE 13症例シリーズ</h3>
+          <p class="body">BBE患者13人を分析。多くは上気道感染後に複視などで発症し、免疫グロブリン療法とステロイドの併用が最も効果的で、ほとんどの患者が改善しました。早期の治療開始が良好な予後につながると報告しています。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>治療の見通しに関する具体的な裏づけです。早く治療を始めれば多くの方が回復に向かうという、希望につながる実データです。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/41746399/" target="_blank" rel="noopener noreferrer">PubMed 41746399</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">3</span><h2>過去の治療法と比較して進歩が見られた点</h2></div>
+      <div class="shifts">
+        <div class="shift"><div class="topic">診断のしかた</div><p class="fromto"><span class="from">MRIや髄液の異常が診断の中心</span><span class="arrow">→</span>正常でも臨床症状＋抗GQ1b抗体＋神経生理検査で早期診断できるという報告が相次ぎ、治療開始が早まる。</p></div>
+        <div class="shift"><div class="topic">病気の理解</div><p class="fromto"><span class="from">BBE・MFS・GBSは別々の病気</span><span class="arrow">→</span>抗GQ1b抗体症候群として統一的に理解。抗体が陰性でも臨床診断で拾えるように。</p></div>
+        <div class="shift"><div class="topic">治療</div><p class="fromto"><span class="from">IVIG・血漿交換という基本</span><span class="arrow">→</span>IVIGとステロイドの併用や早期導入で予後を高める方向へ。関連疾患では生物学的製剤の応用も。</p></div>
+      </div>
+    </section>
+
+    <nav class="crosslinks" aria-label="他の疾患のレポート">
+      <p class="cl-title">他の疾患の今月のレポート</p>
+      <ul>
+        <li><a href="https://hirari2020.github.io/neuro-reports/gbs.html">ギラン・バレー症候群<span class="en">GBS</span></a></li>
+        <li><a href="https://hirari2020.github.io/neuro-reports/mfs.html">ミラーフィッシャー症候群<span class="en">MFS</span></a></li>
+        <li class="current">ビッカースタッフ脳幹脳炎（BBE・このページ）</li>
+        <li><a href="https://hirari2020.github.io/neuro-reports/mmn.html">多巣性運動ニューロパチー<span class="en">MMN</span></a></li>
+        <li><a href="https://hirari2020.github.io/neuro-reports/cidp.html">慢性炎症性脱髄性多発根ニューロパチー<span class="en">CIDP</span></a></li>
+      </ul>
+    </nav>
+
+    <footer class="foot">
+      <p class="note">本レポートは、PubMed掲載の実在論文（出典リンクは本物）をAIが要約したものです。要点整理を目的としており、医療上の助言ではありません。掲載論文の多くは症例報告や観察研究で、治療効果が確立したことを意味しません。個々の治療判断は必ず主治医とご相談ください。会報誌へ実掲載する際は、医療監修者による内容確認をおすすめします。なお本テーマは検索の性質上、他疾患に言及した論文が一部含まれるため、BBEが主題の論文に絞って作成しています。</p>
+      <p class="meta"><span>出典：PubMed（各カードのリンク先）</span><span>作成日：2026年7月4日</span><span>公開範囲：リンクを知る方のみ</span></p>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>

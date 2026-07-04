@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>今月のMFS最新動向レポート｜患者会 会報誌</title>
+</head>
+<body style="margin:0">
+<style>
+  :root {
+    --paper:#F2F1EB; --surface:#FCFBF7; --ink:#1D2A2A; --ink-soft:#55635F;
+    --accent:#35688E; --accent-deep:#1E3F58; --accent-tint:#E0E8EF;
+    --gold:#A9762E; --line:#DEDBD0;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP","Meiryo",system-ui,sans-serif;
+    --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","MS PMincho",serif;
+  }
+  * { box-sizing:border-box; }
+  .page { background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.85;
+    -webkit-font-smoothing:antialiased; padding:clamp(20px,5vw,56px) clamp(16px,4vw,32px) 64px; min-height:100%; }
+  .wrap { max-width:940px; margin:0 auto; }
+  .masthead { border-bottom:2px solid var(--accent-deep); padding-bottom:22px; margin-bottom:30px; }
+  .eyebrow { font-size:12.5px; letter-spacing:.16em; color:var(--accent); font-weight:700; margin:0 0 12px; }
+  .masthead h1 { font-family:var(--serif); font-weight:700; font-size:clamp(28px,5.4vw,44px); line-height:1.25; letter-spacing:.01em; margin:0 0 10px; text-wrap:balance; }
+  .masthead .sub { font-size:15px; color:var(--ink-soft); margin:0; }
+  .masthead .sub b { color:var(--ink); font-weight:700; }
+  .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:40px; }
+  .kpi { background:var(--surface); border:1px solid var(--line); border-radius:4px; border-top:3px solid var(--accent); padding:16px 16px 14px; }
+  .kpi .k-label { font-size:11.5px; letter-spacing:.08em; color:var(--ink-soft); margin:0 0 8px; }
+  .kpi .k-value { font-family:var(--serif); font-size:clamp(22px,3.6vw,30px); font-weight:700; line-height:1; font-variant-numeric:tabular-nums; }
+  .kpi .k-value small { font-size:14px; font-weight:700; margin-left:3px; color:var(--ink-soft); }
+  .section { margin-bottom:44px; }
+  .sec-head { display:flex; align-items:baseline; gap:14px; margin-bottom:18px; }
+  .sec-num { font-family:var(--serif); font-size:15px; color:var(--accent); font-weight:700; border:1px solid var(--accent); border-radius:50%; width:30px; height:30px; display:grid; place-items:center; flex:0 0 auto; }
+  .sec-head h2 { font-family:var(--serif); font-size:clamp(19px,3.2vw,24px); font-weight:700; margin:0; line-height:1.3; }
+  .lead { background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:4px; padding:24px clamp(20px,3.5vw,30px); font-size:16.5px; line-height:1.95; }
+  .lead p { margin:0; }
+  .features { display:grid; gap:18px; }
+  .feature { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:22px clamp(20px,3.5vw,28px) 24px; }
+  .f-top { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; }
+  .chip { font-size:11.5px; font-weight:700; letter-spacing:.04em; padding:3px 10px; border-radius:999px; color:#fff; }
+  .chip.research { background:var(--accent); }
+  .chip.kind { background:transparent; color:var(--accent-deep); border:1px solid var(--accent); }
+  .stars { margin-left:auto; font-size:13px; letter-spacing:.1em; color:var(--gold); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .stars span { color:var(--line); }
+  .feature h3 { font-family:var(--serif); font-size:clamp(17.5px,2.9vw,21px); font-weight:700; line-height:1.45; margin:0 0 12px; text-wrap:balance; }
+  .feature .body { margin:0 0 16px; font-size:15.5px; }
+  .impact { background:var(--accent-tint); border-radius:5px; padding:14px 16px; font-size:14.5px; line-height:1.8; }
+  .impact .lab { display:block; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--accent-deep); margin-bottom:5px; }
+  .src { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:13px; font-weight:700; color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+  .src:hover { border-bottom-color:var(--accent); }
+  .src::after { content:"\2197"; font-size:12px; }
+  .shifts { display:grid; gap:14px; }
+  .shift { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:18px clamp(18px,3vw,24px); display:grid; grid-template-columns:150px 1fr; gap:6px 22px; align-items:start; }
+  .shift .topic { font-family:var(--serif); font-weight:700; font-size:16px; color:var(--accent-deep); }
+  .shift .fromto { margin:0; font-size:15px; }
+  .shift .fromto .from { color:var(--ink-soft); }
+  .shift .fromto .arrow { color:var(--gold); font-weight:700; margin:0 8px; }
+  .crosslinks { margin-top:48px; background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:20px clamp(20px,3.5vw,26px); }
+  .crosslinks .cl-title { font-family:var(--serif); font-weight:700; font-size:16px; margin:0 0 12px; color:var(--accent-deep); }
+  .crosslinks ul { list-style:none; margin:0; padding:0; display:grid; gap:9px; }
+  .crosslinks li a { color:var(--accent); text-decoration:none; font-size:14.5px; font-weight:700; border-bottom:1px solid transparent; }
+  .crosslinks li a:hover { border-bottom-color:var(--accent); }
+  .crosslinks li a .en { color:var(--ink-soft); font-weight:400; font-size:13px; margin-left:6px; }
+  .crosslinks li.current { color:var(--ink-soft); font-size:14.5px; }
+  .foot { margin-top:40px; border-top:1px solid var(--line); padding-top:22px; font-size:13px; color:var(--ink-soft); line-height:1.8; }
+  .foot .note { background:#FBF6EC; border:1px solid #EAD9B8; border-radius:5px; padding:14px 16px; margin:0 0 16px; color:#6B5426; }
+  .foot .meta { display:flex; flex-wrap:wrap; gap:6px 20px; margin:0; }
+  .foot .meta span { white-space:nowrap; }
+  a:focus-visible, .src:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  @media (max-width:720px) { .kpis { grid-template-columns:repeat(2,1fr); } .shift { grid-template-columns:1fr; gap:4px; } }
+  .fade { opacity:0; transform:translateY(8px); animation:rise .6s ease forwards; }
+  .fade:nth-child(2) { animation-delay:.06s; } .fade:nth-child(3) { animation-delay:.12s; }
+  @keyframes rise { to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce) { .fade { animation:none; opacity:1; transform:none; } }
+</style>
+
+<div class="page">
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">患者会 会報誌用 ｜ 月次レポート</p>
+      <h1>今月のMFS最新動向レポート</h1>
+      <p class="sub">ミラーフィッシャー症候群　<b>2026年7月号</b></p>
+    </header>
+
+    <section class="kpis" aria-label="今月の概況">
+      <div class="kpi"><p class="k-label">分析対象論文</p><div class="k-value">3<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">重要度4以上</p><div class="k-value">1<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">対象期間</p><div class="k-value" style="font-size:19px">直近1ヶ月</div></div>
+      <div class="kpi"><p class="k-label">最新の論文</p><div class="k-value">6<small>/23</small></div></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">1</span><h2>今月のトレンド要約</h2></div>
+      <div class="lead"><p>MFSは希少な病気で、今月の新規論文は少数でした。中心テーマは「正確な診断」です。MFSは診断基準を厳密に満たし、似た症状を持つ他の病気を確実に除外して初めて診断すべき、という指摘がありました。あわせて、激しい頭痛や一過性の意識障害で発症した非典型的な例、片側の眼球運動障害だけで現れる「不完全型」の報告など、診断の落とし穴に注意を促す症例が並びました。治療そのものより「見逃さない・取り違えない」ことに焦点が当たった月といえます。抗GQ1b抗体を背景とするGBS・ビッカースタッフ脳幹脳炎との連続性の理解も、正確な診断の土台になります。</p></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">2</span><h2>特に注目すべきニュース3選</h2></div>
+      <div class="features">
+        <article class="feature fade">
+          <div class="f-top"><span class="chip research">研究</span><span class="chip kind">診断</span><span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span></div>
+          <h3>MFSは診断基準を満たし、他の疾患を除外した場合にのみ診断すべき</h3>
+          <p class="body">MFSを正しく診断するには、確立された診断基準を適用し、似た症状を持つ他の病気を確実に除外することが重要だと強調した報告です。正確な診断が、適切な治療と予後の改善につながります。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>「複視・ふらつき・反射消失」がそろっても、他の病気の可能性を確かめてこそ確かな診断になります。丁寧な鑑別は遠回りではなく、適切な治療への近道です。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42382159/" target="_blank" rel="noopener noreferrer">PubMed 42382159</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top"><span class="chip research">研究</span><span class="chip kind">非典型例</span><span class="stars" aria-label="重要度3/5">★★★<span>★★</span></span></div>
+          <h3>激しい頭痛と一過性の意識障害で発症したMFS（イエメンの症例報告）</h3>
+          <p class="body">MFSが、典型的な複視やふらつきではなく、激しい頭痛と一時的な意識障害で始まった珍しい症例の報告です。診断が難しくなる入口の一つを示しています。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>MFSは教科書どおりの症状で始まるとは限りません。「らしくない」症状でも念頭に置くことが、診断の遅れを防ぐ手がかりになります。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42370323/" target="_blank" rel="noopener noreferrer">PubMed 42370323</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top"><span class="chip research">研究</span><span class="chip kind">不完全型</span><span class="stars" aria-label="重要度3/5">★★★<span>★★</span></span></div>
+          <h3>片側の眼球運動障害だけで現れた「不完全型」MFSの2症例</h3>
+          <p class="body">3つの特徴がそろわず、片側の眼球運動障害を主症状とする不完全なMFSの2例を報告。症状が一部だけでもMFSのことがある、と示しています。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>症状がすべてそろわなくてもMFSの可能性はあります。早めに気づいて専門医に相談することが、適切な対応につながります。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42144338/" target="_blank" rel="noopener noreferrer">PubMed 42144338</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">3</span><h2>過去の治療法と比較して進歩が見られた点</h2></div>
+      <div class="shifts">
+        <div class="shift"><div class="topic">診断の考え方</div><p class="fromto"><span class="from">3徴（眼球運動障害・運動失調・腱反射消失）で診断</span><span class="arrow">→</span>非典型例・不完全型の報告が増え、診断基準の厳密な適用と他疾患の除外を重視する方向へ。</p></div>
+        <div class="shift"><div class="topic">病気の位置づけ</div><p class="fromto"><span class="from">MFS単独の病気として理解</span><span class="arrow">→</span>抗GQ1b抗体を背景に、GBS・ビッカースタッフ脳幹脳炎と地続きの「スペクトラム」として捉える見方が定着。</p></div>
+      </div>
+    </section>
+
+    <nav class="crosslinks" aria-label="他の疾患のレポート">
+      <p class="cl-title">他の疾患の今月のレポート</p>
+      <ul>
+        <li><a href="https://hirari2020.github.io/neuro-reports/gbs.html">ギラン・バレー症候群<span class="en">GBS</span></a></li>
+        <li class="current">ミラーフィッシャー症候群（MFS・このページ）</li>
+        <li><a href="https://hirari2020.github.io/neuro-reports/bbe.html">ビッカースタッフ脳幹脳炎<span class="en">BBE</span></a></li>
+        <li><a href="https://hirari2020.github.io/neuro-reports/mmn.html">多巣性運動ニューロパチー<span class="en">MMN</span></a></li>
+        <li><a href="https://hirari2020.github.io/neuro-reports/cidp.html">慢性炎症性脱髄性多発根ニューロパチー<span class="en">CIDP</span></a></li>
+      </ul>
+    </nav>
+
+    <footer class="foot">
+      <p class="note">本レポートは、PubMed掲載の実在論文（出典リンクは本物）をAIが要約したものです。要点整理を目的としており、医療上の助言ではありません。掲載論文の多くは症例報告や観察研究で、治療効果が確立したことを意味しません。個々の治療判断は必ず主治医とご相談ください。会報誌へ実掲載する際は、医療監修者による内容確認をおすすめします。</p>
+      <p class="meta"><span>出典：PubMed（各カードのリンク先）</span><span>作成日：2026年7月4日</span><span>公開範囲：リンクを知る方のみ</span></p>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>
