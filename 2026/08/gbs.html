@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GBS最新動向レポート 2026年8月号｜患者会 会報誌</title>
+<style>
+  :root {
+    --paper:#F2F1EB; --surface:#FCFBF7; --ink:#1D2A2A; --ink-soft:#55635F;
+    --accent:#2E6E62; --accent-deep:#173F38; --accent-tint:#E1EBE5;
+    --gold:#A9762E; --line:#DEDBD0;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP","Meiryo",system-ui,sans-serif;
+    --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","MS PMincho",serif;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.85;
+    -webkit-font-smoothing:antialiased; padding:clamp(20px,5vw,56px) clamp(16px,4vw,32px) 64px; min-height:100%; }
+  .wrap { max-width:940px; margin:0 auto; }
+  .masthead { border-bottom:2px solid var(--accent-deep); padding-bottom:22px; margin-bottom:30px; }
+  .eyebrow { font-size:12.5px; letter-spacing:.16em; color:var(--accent); font-weight:700; margin:0 0 12px; }
+  .masthead h1 { font-family:var(--serif); font-weight:700; font-size:clamp(28px,5.4vw,44px); line-height:1.25; letter-spacing:.01em; margin:0 0 10px; text-wrap:balance; }
+  .masthead .sub { font-size:15px; color:var(--ink-soft); margin:0; }
+  .masthead .sub b { color:var(--ink); font-weight:700; }
+  .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:40px; }
+  .kpi { background:var(--surface); border:1px solid var(--line); border-radius:4px; border-top:3px solid var(--accent); padding:16px 16px 14px; }
+  .kpi .k-label { font-size:11.5px; letter-spacing:.08em; color:var(--ink-soft); margin:0 0 8px; }
+  .kpi .k-value { font-family:var(--serif); font-size:clamp(22px,3.6vw,30px); font-weight:700; line-height:1; font-variant-numeric:tabular-nums; }
+  .kpi .k-value small { font-size:14px; font-weight:700; margin-left:3px; color:var(--ink-soft); }
+  .section { margin-bottom:44px; }
+  .sec-head { display:flex; align-items:baseline; gap:14px; margin-bottom:18px; }
+  .sec-num { font-family:var(--serif); font-size:15px; color:var(--accent); font-weight:700; border:1px solid var(--accent); border-radius:50%; width:30px; height:30px; display:grid; place-items:center; flex:0 0 auto; }
+  .sec-head h2 { font-family:var(--serif); font-size:clamp(19px,3.2vw,24px); font-weight:700; margin:0; line-height:1.3; }
+  .lead { background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:4px; padding:24px clamp(20px,3.5vw,30px); font-size:16.5px; line-height:1.95; }
+  .lead p { margin:0; }
+  .features { display:grid; gap:18px; }
+  .feature { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:22px clamp(20px,3.5vw,28px) 24px; }
+  .f-top { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; }
+  .chip { font-size:11.5px; font-weight:700; letter-spacing:.04em; padding:3px 10px; border-radius:999px; color:#fff; }
+  .chip.research { background:var(--accent); }
+  .chip.kind { background:transparent; color:var(--accent-deep); border:1px solid var(--accent); }
+  .stars { margin-left:auto; font-size:13px; letter-spacing:.1em; color:var(--gold); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .stars span { color:var(--line); }
+  .feature h3 { font-family:var(--serif); font-size:clamp(17.5px,2.9vw,21px); font-weight:700; line-height:1.45; margin:0 0 12px; text-wrap:balance; }
+  .feature .body { margin:0 0 16px; font-size:15.5px; }
+  .impact { background:var(--accent-tint); border-radius:5px; padding:14px 16px; font-size:14.5px; line-height:1.8; }
+  .impact .lab { display:block; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--accent-deep); margin-bottom:5px; }
+  .src { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:13px; font-weight:700; color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+  .src:hover { border-bottom-color:var(--accent); }
+  .src::after { content:"\2197"; font-size:12px; }
+  .shifts { display:grid; gap:14px; }
+  .shift { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:18px clamp(18px,3vw,24px); display:grid; grid-template-columns:150px 1fr; gap:6px 22px; align-items:start; }
+  .shift .topic { font-family:var(--serif); font-weight:700; font-size:16px; color:var(--accent-deep); }
+  .shift .fromto { margin:0; font-size:15px; }
+  .shift .fromto .from { color:var(--ink-soft); }
+  .shift .fromto .arrow { color:var(--gold); font-weight:700; margin:0 8px; }
+  .pager { margin-top:48px; display:flex; flex-wrap:wrap; gap:12px; }
+  .pager a { flex:1 1 240px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:16px 20px; text-decoration:none; color:var(--accent); font-weight:700; font-size:14.5px; display:flex; align-items:center; gap:10px; transition:transform .12s ease, box-shadow .12s ease; }
+  .pager a:hover { transform:translateY(-1px); box-shadow:0 4px 14px rgba(0,0,0,.05); }
+  .pager a::before { content:"›"; color:var(--gold); font-weight:700; font-size:18px; }
+  .pager a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:8px; }
+  .foot { margin-top:40px; border-top:1px solid var(--line); padding-top:22px; font-size:13px; color:var(--ink-soft); line-height:1.8; }
+  .foot .note { background:#FBF6EC; border:1px solid #EAD9B8; border-radius:5px; padding:14px 16px; margin:0 0 16px; color:#6B5426; }
+  .foot .meta { display:flex; flex-wrap:wrap; gap:6px 20px; margin:0; }
+  .foot .meta span { white-space:nowrap; }
+  a:focus-visible, .src:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  @media (max-width:720px) { .kpis { grid-template-columns:repeat(2,1fr); } .shift { grid-template-columns:1fr; gap:4px; } }
+  .fade { opacity:0; transform:translateY(8px); animation:rise .6s ease forwards; }
+  .fade:nth-child(2) { animation-delay:.06s; } .fade:nth-child(3) { animation-delay:.12s; }
+  @keyframes rise { to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce) { .fade { animation:none; opacity:1; transform:none; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">患者会 会報誌用 ｜ 月次レポート</p>
+      <h1>今月のGBS最新動向レポート</h1>
+      <p class="sub">ギラン・バレー症候群（Guillain-Barré症候群）　<b>2026年8月号</b></p>
+    </header>
+
+    <section class="kpis" aria-label="今月の概況">
+      <div class="kpi"><p class="k-label">分析対象論文</p><div class="k-value">26<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">重要度4以上</p><div class="k-value">26<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">対象期間</p><div class="k-value" style="font-size:19px">直近1ヶ月</div></div>
+      <div class="kpi"><p class="k-label">最新の論文</p><div class="k-value" style="font-size:19px">7/18</div></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">1</span><h2>今月のトレンド要約</h2></div>
+      <div class="lead"><p>今月はGBSの「原因の多様化」と「治療の広がり」が目立ちました。ジカ熱・西ナイルウイルス・カンピロバクターなど、様々な感染症とGBSの関連を示す報告が相次ぐ一方、COVID-19 mRNAワクチン接種はむしろGBSリスクを約6割下げるという大規模研究が発表され、ワクチン安全性への理解が進みました。治療面では、新薬エファルチギモドが従来の免疫グロブリン療法より速く安全に改善したとの報告や、標準治療に鍼灸を併用して回復が促進されたとの観察研究も登場。一方でリンパ腫や脳幹梗塞、筋無力症などがGBSに似た症状で現れる誤診事例の報告も多く、慎重な鑑別診断の重要性が改めて強調された月でした。</p></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">2</span><h2>特に注目すべきニュース3選</h2></div>
+      <div class="features">
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">予防</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>COVID-19 mRNAワクチン接種でGBSリスクが61%低下</h3>
+          <p class="body">COVID-19感染自体はGBSのリスクを高めますが、大規模縦断研究により、mRNAワクチン（ファイザー製・モデルナ製）の接種は逆にGBSの発症リスクを約61%低減させることが確認されました。一方、ウイルスベクターワクチンでは同様の効果は見られませんでした。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>ワクチン接種がGBSの誘因になるのではという懸念に対し、大規模データはむしろワクチンが保護的に働くことを示しました。COVID-19ワクチン接種を迷っている患者さんやご家族にとって、安心材料となる知見です。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42465888/" target="_blank" rel="noopener noreferrer">PubMed 42465888</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">治療</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>新薬エファルチギモド、GBS治療で早い改善と高い安全性を示唆</h3>
+          <p class="body">IgG抗体を低下させる新薬エファルチギモドを、従来の免疫グロブリン療法（IVIg）と比較した後ろ向き観察研究です。エファルチギモド単独治療群は改善が早く、最終的な改善率も81.3%と良好で、有害事象の発生率もIVIg群より低い結果でした。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>52人規模の初期段階の観察研究であり、効果を確定づけるものではありません。今後の大規模比較試験の結果を待つ必要がありますが、既存治療で十分な効果が得られない患者さんにとって新たな選択肢となる可能性があります。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42465769/" target="_blank" rel="noopener noreferrer">PubMed 42465769</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">補助療法</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>標準治療に鍼灸を併用すると回復が早まる可能性</h3>
+          <p class="body">GBS患者128名を対象とした前向き観察研究で、標準的な免疫グロブリン治療に鍼灸治療を加えた患者は、2週間後の神経学的改善率が約50%と、鍼灸なしの群（約36%）より高いことが分かりました。他の影響因子を調整しても独立した効果が確認されています。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>観察研究のため因果関係の証明には至っていませんが、標準治療と組み合わせる補助的な選択肢として注目されます。自己判断で始めず、主治医に相談のうえ検討するとよいでしょう。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42394936/" target="_blank" rel="noopener noreferrer">PubMed 42394936</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">3</span><h2>過去の治療法と比較して進歩が見られた点</h2></div>
+      <div class="shifts">
+        <div class="shift"><div class="topic">治療の選択肢</div><p class="fromto"><span class="from">免疫グロブリン静注(IVIg)や血漿交換が中心</span><span class="arrow">→</span>FcRn阻害薬「エファルチギモド」など新しい仕組みの薬剤が登場し、回復速度や安全性の面での改善が報告され始めている</p></div>
+        <div class="shift"><div class="topic">ワクチンとの関係</div><p class="fromto"><span class="from">ワクチン接種とGBSの関連が懸念材料として議論されてきた</span><span class="arrow">→</span>大規模研究により、mRNAワクチンはむしろGBSリスクを下げる保護的な効果を持つことが明確に示された</p></div>
+        <div class="shift"><div class="topic">原因の理解</div><p class="fromto"><span class="from">カンピロバクター感染など限られた感染症が主な原因とされてきた</span><span class="arrow">→</span>ジカ熱や西ナイルウイルスなど蚊が媒介するウイルス、COVID-19など、原因となりうる感染症の裾野が広がっていることが分かってきた</p></div>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="ナビゲーション">
+      <a href="./">この号のトップ（5疾患一覧）へ</a>
+      <a href="../../">バックナンバー一覧へ</a>
+    </nav>
+
+    <footer class="foot">
+      <p class="note">本レポートは、PubMed掲載の実在論文（出典リンクは本物）をAIが要約したものです。要点整理を目的としており、医療上の助言ではありません。掲載論文の多くは症例報告や観察研究で、治療効果が確立したことを意味しません。個々の治療判断は必ず主治医とご相談ください。会報誌へ実掲載する際は、医療監修者による内容確認をおすすめします。</p>
+      <p class="meta"><span>出典：PubMed（各カードのリンク先）</span><span>作成日：2026年8月1日</span><span>公開範囲：リンクを知る方のみ</span></p>
+    </footer>
+  </div>
+</body>
+</html>
