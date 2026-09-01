@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GBS最新動向レポート 2026年9月号｜患者会 会報誌</title>
+<style>
+  :root {
+    --paper:#F2F1EB; --surface:#FCFBF7; --ink:#1D2A2A; --ink-soft:#55635F;
+    --accent:#2E6E62; --accent-deep:#173F38; --accent-tint:#E1EBE5;
+    --gold:#A9762E; --line:#DEDBD0;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP","Meiryo",system-ui,sans-serif;
+    --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","MS PMincho",serif;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.85;
+    -webkit-font-smoothing:antialiased; padding:clamp(20px,5vw,56px) clamp(16px,4vw,32px) 64px; min-height:100%; }
+  .wrap { max-width:940px; margin:0 auto; }
+  .masthead { border-bottom:2px solid var(--accent-deep); padding-bottom:22px; margin-bottom:30px; }
+  .eyebrow { font-size:12.5px; letter-spacing:.16em; color:var(--accent); font-weight:700; margin:0 0 12px; }
+  .masthead h1 { font-family:var(--serif); font-weight:700; font-size:clamp(28px,5.4vw,44px); line-height:1.25; letter-spacing:.01em; margin:0 0 10px; text-wrap:balance; }
+  .masthead .sub { font-size:15px; color:var(--ink-soft); margin:0; }
+  .masthead .sub b { color:var(--ink); font-weight:700; }
+  .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:40px; }
+  .kpi { background:var(--surface); border:1px solid var(--line); border-radius:4px; border-top:3px solid var(--accent); padding:16px 16px 14px; }
+  .kpi .k-label { font-size:11.5px; letter-spacing:.08em; color:var(--ink-soft); margin:0 0 8px; }
+  .kpi .k-value { font-family:var(--serif); font-size:clamp(22px,3.6vw,30px); font-weight:700; line-height:1; font-variant-numeric:tabular-nums; }
+  .kpi .k-value small { font-size:14px; font-weight:700; margin-left:3px; color:var(--ink-soft); }
+  .section { margin-bottom:44px; }
+  .sec-head { display:flex; align-items:baseline; gap:14px; margin-bottom:18px; }
+  .sec-num { font-family:var(--serif); font-size:15px; color:var(--accent); font-weight:700; border:1px solid var(--accent); border-radius:50%; width:30px; height:30px; display:grid; place-items:center; flex:0 0 auto; }
+  .sec-head h2 { font-family:var(--serif); font-size:clamp(19px,3.2vw,24px); font-weight:700; margin:0; line-height:1.3; }
+  .lead { background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:4px; padding:24px clamp(20px,3.5vw,30px); font-size:16.5px; line-height:1.95; }
+  .lead p { margin:0; }
+  .features { display:grid; gap:18px; }
+  .feature { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:22px clamp(20px,3.5vw,28px) 24px; }
+  .f-top { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; }
+  .chip { font-size:11.5px; font-weight:700; letter-spacing:.04em; padding:3px 10px; border-radius:999px; color:#fff; }
+  .chip.research { background:var(--accent); }
+  .chip.kind { background:transparent; color:var(--accent-deep); border:1px solid var(--accent); }
+  .stars { margin-left:auto; font-size:13px; letter-spacing:.1em; color:var(--gold); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .stars span { color:var(--line); }
+  .feature h3 { font-family:var(--serif); font-size:clamp(17.5px,2.9vw,21px); font-weight:700; line-height:1.45; margin:0 0 12px; text-wrap:balance; }
+  .feature .body { margin:0 0 16px; font-size:15.5px; }
+  .impact { background:var(--accent-tint); border-radius:5px; padding:14px 16px; font-size:14.5px; line-height:1.8; }
+  .impact .lab { display:block; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--accent-deep); margin-bottom:5px; }
+  .src { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:13px; font-weight:700; color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+  .src:hover { border-bottom-color:var(--accent); }
+  .src::after { content:"\2197"; font-size:12px; }
+  .shifts { display:grid; gap:14px; }
+  .shift { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:18px clamp(18px,3vw,24px); display:grid; grid-template-columns:150px 1fr; gap:6px 22px; align-items:start; }
+  .shift .topic { font-family:var(--serif); font-weight:700; font-size:16px; color:var(--accent-deep); }
+  .shift .fromto { margin:0; font-size:15px; }
+  .shift .fromto .from { color:var(--ink-soft); }
+  .shift .fromto .arrow { color:var(--gold); font-weight:700; margin:0 8px; }
+  .pager { margin-top:48px; display:flex; flex-wrap:wrap; gap:12px; }
+  .pager a { flex:1 1 240px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:16px 20px; text-decoration:none; color:var(--accent); font-weight:700; font-size:14.5px; display:flex; align-items:center; gap:10px; transition:transform .12s ease, box-shadow .12s ease; }
+  .pager a:hover { transform:translateY(-1px); box-shadow:0 4px 14px rgba(0,0,0,.05); }
+  .pager a::before { content:"›"; color:var(--gold); font-weight:700; font-size:18px; }
+  .pager a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:8px; }
+  .foot { margin-top:40px; border-top:1px solid var(--line); padding-top:22px; font-size:13px; color:var(--ink-soft); line-height:1.8; }
+  .foot .note { background:#FBF6EC; border:1px solid #EAD9B8; border-radius:5px; padding:14px 16px; margin:0 0 16px; color:#6B5426; }
+  .foot .meta { display:flex; flex-wrap:wrap; gap:6px 20px; margin:0; }
+  .foot .meta span { white-space:nowrap; }
+  a:focus-visible, .src:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  @media (max-width:720px) { .kpis { grid-template-columns:repeat(2,1fr); } .shift { grid-template-columns:1fr; gap:4px; } }
+  .fade { opacity:0; transform:translateY(8px); animation:rise .6s ease forwards; }
+  .fade:nth-child(2) { animation-delay:.06s; } .fade:nth-child(3) { animation-delay:.12s; }
+  @keyframes rise { to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce) { .fade { animation:none; opacity:1; transform:none; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">患者会 会報誌用 ｜ 月次レポート</p>
+      <h1>今月のGBS最新動向レポート</h1>
+      <p class="sub">ギラン・バレー症候群（Guillain-Barré症候群）　<b>2026年9月号</b></p>
+    </header>
+
+    <section class="kpis" aria-label="今月の概況">
+      <div class="kpi"><p class="k-label">分析対象論文</p><div class="k-value">19<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">重要度4以上</p><div class="k-value">19<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">対象期間</p><div class="k-value" style="font-size:19px">直近1ヶ月</div></div>
+      <div class="kpi"><p class="k-label">最新の論文</p><div class="k-value" style="font-size:19px">8<small>/27</small></div></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">1</span><h2>今月のトレンド要約</h2></div>
+      <div class="lead"><p>今月は感染症とGBSの関連を示す症例報告が目立ちました。デング熱やアルボウイルス感染後の発症例、抗GD1b・抗GQ1b抗体陽性の複合型（脳幹脳炎や脊髄炎との重複）など、多様な発症パターンが報告されています。また「再発性GBS」や「急性発症の慢性炎症性脱髄性多発神経障害」との鑑別が診療上の重要課題として繰り返し取り上げられ、症状が長引く・再燃する場合は診断を見直す必要性が強調されました。治療面では、新しい鎮痛薬スゼトリギンによる難治性疼痛への対応や、人工呼吸器からの離脱は直接気管切開より段階的な離脱を優先すべきとする大規模データが報告され、実践的な治療の質向上につながる知見が揃った1か月でした。</p></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">2</span><h2>特に注目すべきニュース3選</h2></div>
+      <div class="features">
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">治療</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>難治性の神経障害性疼痛に、新しい鎮痛薬「スゼトリギン」の可能性</h3>
+          <p class="body">GBS患者の約半数〜7割は強い神経の痛みを経験しますが、従来の鎮痛薬が効きにくいケースも少なくありません。スゼトリギンは痛みの信号を伝える神経の経路そのものを遮断する新しいタイプの薬で、こうした難治性の痛みへの新しい治療選択肢として検討されています。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>痛みが取れずに困っている方にとって、既存の薬とは異なる仕組みの選択肢が増える可能性を示す報告です。まだ研究段階であり、使用については主治医にご相談ください。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42612726/" target="_blank" rel="noopener noreferrer">PubMed 42612726</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">治療</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>人工呼吸器からの離脱、まず段階的な離脱を試す方が良好な結果（10年・494例の解析）</h3>
+          <p class="body">人工呼吸器が必要になったGBS患者について、最初から気管切開を行う方法と、まず離脱を試みてから必要なら気管切開に進む標準的な方法を比較したところ、標準的な方法の方が完全に人工呼吸器から離脱できた割合が高くなりました（83% 対 43%）。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>長期の人工呼吸管理が必要と判断された場合でも、まず離脱を試みるという方針の方が回復につながりやすいことを示す、実践的に役立つデータです。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42592412/" target="_blank" rel="noopener noreferrer">PubMed 42592412</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">病態・生活</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>ギラン・バレー症候群の再発は珍しくない――再発時はより強い治療が必要な場合も</h3>
+          <p class="body">GBSは一度だけ発症すると考えられてきましたが、この報告は再発がそれほど珍しくないことを示しています。さらに、再発した場合は初回発症時よりも積極的な治療が必要になることがある点も指摘されました。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>治ったはずの症状が戻ってきた場合でも、それは「珍しいこと」ではなく起こりうることだと知っておくことは、早めの受診判断につながります。気になる症状があれば早めに主治医へ相談することが大切です。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42647924/" target="_blank" rel="noopener noreferrer">PubMed 42647924</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">3</span><h2>過去の治療法と比較して進歩が見られた点</h2></div>
+      <div class="shifts">
+        <div class="shift"><div class="topic">疼痛管理</div><p class="fromto"><span class="from">従来の鎮痛薬が中心で、効果が乏しい場合の選択肢が限られていた</span><span class="arrow">→</span>神経の痛み信号の伝達に着目した新しい機序の薬剤（スゼトリギン）が難治性疼痛の選択肢として登場。</p></div>
+        <div class="shift"><div class="topic">人工呼吸器からの離脱方針</div><p class="fromto"><span class="from">長期化が見込まれる場合、早期の気管切開も選択肢として検討されていた</span><span class="arrow">→</span>大規模データにより、まず段階的な離脱を優先する方が良好な結果につながることが具体的な数値で示された。</p></div>
+        <div class="shift"><div class="topic">再発・鑑別診断の理解</div><p class="fromto"><span class="from">GBSは基本的に一度きりの疾患という理解が中心だった</span><span class="arrow">→</span>再発例や急性発症の慢性炎症性脱髄性多発神経障害との鑑別が重要な臨床課題として認識され、長引く・再燃する場合は診断の見直しが推奨されるように。</p></div>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="ナビゲーション">
+      <a href="./">この号のトップ（5疾患一覧）へ</a>
+      <a href="../../">バックナンバー一覧へ</a>
+    </nav>
+
+    <footer class="foot">
+      <p class="note">本レポートは、PubMed掲載の実在論文（出典リンクは本物）をAIが要約したものです。要点整理を目的としており、医療上の助言ではありません。掲載論文の多くは症例報告や観察研究で、治療効果が確立したことを意味しません。個々の治療判断は必ず主治医とご相談ください。会報誌へ実掲載する際は、医療監修者による内容確認をおすすめします。</p>
+      <p class="meta"><span>出典：PubMed（各カードのリンク先）</span><span>作成日：2026年9月1日</span><span>公開範囲：リンクを知る方のみ</span></p>
+    </footer>
+  </div>
+</body>
+</html>
