@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GBS最新動向レポート 2026年10月号｜患者会 会報誌</title>
+<style>
+  :root {
+    --paper:#F2F1EB; --surface:#FCFBF7; --ink:#1D2A2A; --ink-soft:#55635F;
+    --accent:#2E6E62; --accent-deep:#173F38; --accent-tint:#E1EBE5;
+    --gold:#A9762E; --line:#DEDBD0;
+    --sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic","Noto Sans JP","Meiryo",system-ui,sans-serif;
+    --serif:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP","MS PMincho",serif;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); line-height:1.85;
+    -webkit-font-smoothing:antialiased; padding:clamp(20px,5vw,56px) clamp(16px,4vw,32px) 64px; min-height:100%; }
+  .wrap { max-width:940px; margin:0 auto; }
+  .masthead { border-bottom:2px solid var(--accent-deep); padding-bottom:22px; margin-bottom:30px; }
+  .eyebrow { font-size:12.5px; letter-spacing:.16em; color:var(--accent); font-weight:700; margin:0 0 12px; }
+  .masthead h1 { font-family:var(--serif); font-weight:700; font-size:clamp(28px,5.4vw,44px); line-height:1.25; letter-spacing:.01em; margin:0 0 10px; text-wrap:balance; }
+  .masthead .sub { font-size:15px; color:var(--ink-soft); margin:0; }
+  .masthead .sub b { color:var(--ink); font-weight:700; }
+  .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:40px; }
+  .kpi { background:var(--surface); border:1px solid var(--line); border-radius:4px; border-top:3px solid var(--accent); padding:16px 16px 14px; }
+  .kpi .k-label { font-size:11.5px; letter-spacing:.08em; color:var(--ink-soft); margin:0 0 8px; }
+  .kpi .k-value { font-family:var(--serif); font-size:clamp(22px,3.6vw,30px); font-weight:700; line-height:1; font-variant-numeric:tabular-nums; }
+  .kpi .k-value small { font-size:14px; font-weight:700; margin-left:3px; color:var(--ink-soft); }
+  .section { margin-bottom:44px; }
+  .sec-head { display:flex; align-items:baseline; gap:14px; margin-bottom:18px; }
+  .sec-num { font-family:var(--serif); font-size:15px; color:var(--accent); font-weight:700; border:1px solid var(--accent); border-radius:50%; width:30px; height:30px; display:grid; place-items:center; flex:0 0 auto; }
+  .sec-head h2 { font-family:var(--serif); font-size:clamp(19px,3.2vw,24px); font-weight:700; margin:0; line-height:1.3; }
+  .lead { background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:4px; padding:24px clamp(20px,3.5vw,30px); font-size:16.5px; line-height:1.95; }
+  .lead p { margin:0; }
+  .features { display:grid; gap:18px; }
+  .feature { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:22px clamp(20px,3.5vw,28px) 24px; }
+  .f-top { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px; }
+  .chip { font-size:11.5px; font-weight:700; letter-spacing:.04em; padding:3px 10px; border-radius:999px; color:#fff; }
+  .chip.research { background:var(--accent); }
+  .chip.kind { background:transparent; color:var(--accent-deep); border:1px solid var(--accent); }
+  .stars { margin-left:auto; font-size:13px; letter-spacing:.1em; color:var(--gold); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .stars span { color:var(--line); }
+  .feature h3 { font-family:var(--serif); font-size:clamp(17.5px,2.9vw,21px); font-weight:700; line-height:1.45; margin:0 0 12px; text-wrap:balance; }
+  .feature .body { margin:0 0 16px; font-size:15.5px; }
+  .impact { background:var(--accent-tint); border-radius:5px; padding:14px 16px; font-size:14.5px; line-height:1.8; }
+  .impact .lab { display:block; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--accent-deep); margin-bottom:5px; }
+  .src { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:13px; font-weight:700; color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+  .src:hover { border-bottom-color:var(--accent); }
+  .src::after { content:"\2197"; font-size:12px; }
+  .shifts { display:grid; gap:14px; }
+  .shift { background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:18px clamp(18px,3vw,24px); display:grid; grid-template-columns:150px 1fr; gap:6px 22px; align-items:start; }
+  .shift .topic { font-family:var(--serif); font-weight:700; font-size:16px; color:var(--accent-deep); }
+  .shift .fromto { margin:0; font-size:15px; }
+  .shift .fromto .from { color:var(--ink-soft); }
+  .shift .fromto .arrow { color:var(--gold); font-weight:700; margin:0 8px; }
+  .pager { margin-top:48px; display:flex; flex-wrap:wrap; gap:12px; }
+  .pager a { flex:1 1 240px; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:16px 20px; text-decoration:none; color:var(--accent); font-weight:700; font-size:14.5px; display:flex; align-items:center; gap:10px; transition:transform .12s ease, box-shadow .12s ease; }
+  .pager a:hover { transform:translateY(-1px); box-shadow:0 4px 14px rgba(0,0,0,.05); }
+  .pager a::before { content:"›"; color:var(--gold); font-weight:700; font-size:18px; }
+  .pager a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:8px; }
+  .foot { margin-top:40px; border-top:1px solid var(--line); padding-top:22px; font-size:13px; color:var(--ink-soft); line-height:1.8; }
+  .foot .note { background:#FBF6EC; border:1px solid #EAD9B8; border-radius:5px; padding:14px 16px; margin:0 0 16px; color:#6B5426; }
+  .foot .meta { display:flex; flex-wrap:wrap; gap:6px 20px; margin:0; }
+  .foot .meta span { white-space:nowrap; }
+  a:focus-visible, .src:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+  @media (max-width:720px) { .kpis { grid-template-columns:repeat(2,1fr); } .shift { grid-template-columns:1fr; gap:4px; } }
+  .fade { opacity:0; transform:translateY(8px); animation:rise .6s ease forwards; }
+  .fade:nth-child(2) { animation-delay:.06s; } .fade:nth-child(3) { animation-delay:.12s; }
+  @keyframes rise { to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce) { .fade { animation:none; opacity:1; transform:none; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">患者会 会報誌用 ｜ 月次レポート</p>
+      <h1>今月のGBS最新動向レポート</h1>
+      <p class="sub">ギラン・バレー症候群（Guillain-Barré症候群）　<b>2026年10月号</b></p>
+    </header>
+
+    <section class="kpis" aria-label="今月の概況">
+      <div class="kpi"><p class="k-label">分析対象論文</p><div class="k-value">16<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">重要度4以上</p><div class="k-value">16<small>件</small></div></div>
+      <div class="kpi"><p class="k-label">対象期間</p><div class="k-value" style="font-size:19px">直近1ヶ月</div></div>
+      <div class="kpi"><p class="k-label">最新の論文</p><div class="k-value" style="font-size:19px">9/25</div></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">1</span><h2>今月のトレンド要約</h2></div>
+      <div class="lead"><p>今月は16件の重要論文が集まりました。注目は、標準治療（免疫グロブリン・血漿交換）が十分に効かない約2割の患者さんに向けた新薬エファルチギモドの展望と、「GBSに見えて実は別の病気」という鑑別診断の報告が相次いだ点です。抗ニューロファスシン抗体関連ノドパチー、ビタミンB1欠乏、薬剤関連の神経障害などが例です。基礎研究では、2つの病型が神経のランヴィエ絞輪（ノード）で共通の障害を起こすことが示されました。免疫グロブリン再投与の判断や、回復期の心理・社会面を含むケアの研究も出ています。多くは症例報告で、確立した結論ではありません。</p></div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">2</span><h2>特に注目すべきニュース3選</h2></div>
+      <div class="features">
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">治療</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>ギラン・バレー症候群に対するエファルチギモド：治療の根拠、臨床的証拠、および今後の展望</h3>
+          <p class="body">現在の標準治療は約20%の患者さんで十分な効果が得られません。エファルチギモドは有害な自己抗体を減らす新しい仕組みの薬で、他の自己免疫性神経疾患では既に承認されています。GBSでの応用が生物学的に妥当かが整理されました。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>GBSでの有効性は臨床試験の結果待ちで、現時点で使えるようになったわけではありません。標準治療が効きにくい方の新たな選択肢になる可能性があります。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42813052/" target="_blank" rel="noopener noreferrer">PubMed PMID 42813052</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">診断</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>パン・ニューロファスシン抗体関連ノドパチー：ギラン・バレー症候群との鑑別診断における重要な類似疾患</h3>
+          <p class="body">GBSのように発症しても、免疫グロブリンや血漿交換が効かない患者さんの中に、別の病気が隠れていることがあります。2症例では抗体検査で診断され、リツキシマブで完全に回復しました。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>治療への反応が乏しいときは、主治医に抗体検査などの再評価を相談する材料になります。2症例の報告で、一般化はできません。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42763515/" target="_blank" rel="noopener noreferrer">PubMed PMID 42763515</a>
+        </article>
+        <article class="feature fade">
+          <div class="f-top">
+            <span class="chip research">研究</span>
+            <span class="chip kind">病態</span>
+            <span class="stars" aria-label="重要度4/5">★★★★<span>★</span></span>
+          </div>
+          <h3>ギラン・バレー症候群と慢性炎症性脱髄性多発根神経炎における補体調節性ノード脆弱性</h3>
+          <p class="body">GBSの2つの主な病型は、神経の電気信号を伝えるノード部位の障害という共通点を持つことが示されました。補体を抑えるタンパク質（CD55、CD59）がノードに乏しいことが傷みやすさの一因と考えられます。</p>
+          <div class="impact"><span class="lab">患者さんへの影響</span>病気の仕組みの理解が進んだ段階の研究で、補体を標的にした将来の治療開発につながる可能性があります。すぐ治療が変わるものではありません。</div>
+          <a class="src" href="https://pubmed.ncbi.nlm.nih.gov/42684088/" target="_blank" rel="noopener noreferrer">PubMed PMID 42684088</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-head"><span class="sec-num">3</span><h2>過去の治療法と比較して進歩が見られた点</h2></div>
+      <div class="shifts">
+        <div class="shift"><div class="topic">標準治療が効かない場合</div><p class="fromto"><span class="from">免疫グロブリン・血漿交換のみで約2割は効果不十分</span><span class="arrow">→</span>FcRn阻害薬エファルチギモドなど新しい作用の薬が検討段階に</p></div>
+        <div class="shift"><div class="topic">診断の幅</div><p class="fromto"><span class="from">GBSらしい症状＝GBSとして治療</span><span class="arrow">→</span>ノドパチー、ビタミンB1欠乏、がん治療薬の副作用など類似疾患を意識した鑑別が重視される</p></div>
+        <div class="shift"><div class="topic">免疫グロブリンの再投与</div><p class="fromto"><span class="from">初回に反応しない重症例への再投与は推奨されにくい</span><span class="arrow">→</span>「治療関連変動」か「真の予後不良」かを見極めて再投与を判断する視点（サイトメガロウイルス関連例）</p></div>
+        <div class="shift"><div class="topic">研究体制と病態理解</div><p class="fromto"><span class="from">単一施設の研究、病型ごとの別メカニズム</span><span class="arrow">→</span>国際共同研究と、ノードでの共通障害という統一的な見方</p></div>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="ナビゲーション">
+      <a href="./">この号のトップ（5疾患一覧）へ</a>
+      <a href="../../">バックナンバー一覧へ</a>
+    </nav>
+
+    <footer class="foot">
+      <p class="note">本レポートは、PubMed掲載の実在論文（出典リンクは本物）をAIが要約したものです。要点整理を目的としており、医療上の助言ではありません。掲載論文の多くは症例報告や観察研究で、治療効果が確立したことを意味しません。個々の治療判断は必ず主治医とご相談ください。会報誌へ実掲載する際は、医療監修者による内容確認をおすすめします。</p>
+      <p class="meta"><span>出典：PubMed（各カードのリンク先）</span><span>作成日：2026年10月1日</span><span>公開範囲：リンクを知る方のみ</span></p>
+    </footer>
+  </div>
+</body>
+</html>
